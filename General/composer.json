@@ -1,0 +1,14 @@
+{
+  "name": "wizart/general",
+  "license": "Commercial",
+  "description": "monolith Magento2 General",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wizart\\General\\": ""
+    }
+  }
+}

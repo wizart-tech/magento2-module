@@ -1,0 +1,19 @@
+{
+  "name": "wizart/fitting-room",
+  "description": "Wizart Magento 2 Integration",
+  "version": "2.2.1",
+  "require": {
+    "php": "~7.2",
+    "magento/product-community-edition": "~2.2.9"
+  },
+  "type": "magento2-module",
+  "license": "Commercial",
+  "autoload": {
+    "files": [
+      "General/registration.php"
+    ],
+    "psr-4": {
+      "Wizart\\General\\": "General"
+    }
+  }
+}
