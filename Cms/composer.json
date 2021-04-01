@@ -1,0 +1,14 @@
+{
+  "name": "wizart/cms",
+  "license": "Commercial",
+  "description": "monolith Magento2 Cms",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wizart\\Cms\\": ""
+    }
+  }
+}

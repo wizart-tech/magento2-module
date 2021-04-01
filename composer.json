@@ -10,10 +10,12 @@
   "license": "Commercial",
   "autoload": {
     "files": [
-      "General/registration.php"
+      "General/registration.php",
+      "Cms/registration.php"
     ],
     "psr-4": {
-      "Wizart\\General\\": "General"
+      "Wizart\\General\\": "General",
+      "Wizart\\Cms\\": "Cms"
     }
   }
 }

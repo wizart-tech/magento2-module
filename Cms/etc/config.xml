@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <wizart_general>
+            <wizart_home_page>
+                <title>Try it in your room in one click!</title>
+                <background></background>
+                <color></color>
+                <tooltip_disable>0</tooltip_disable>
+                <tooltip_title>See it in your room!</tooltip_title>
+                <tooltip_position>top</tooltip_position>
+                <glitter_disable>0</glitter_disable>
+                <width></width>
+                <height></height>
+                <border></border>
+                <border_radius></border_radius>
+                <image></image>
+                <class_name></class_name>
+                <compact>0</compact>
+                <onload-callback></onload-callback>
+                <on_close_callback></on_close_callback>
+                <element_selector></element_selector>
+                <insert_element_position>append</insert_element_position>
+                <iframe_element_selector></iframe_element_selector>
+            </wizart_home_page>
+        </wizart_general>
+    </default>
+</config>
