@@ -7,12 +7,10 @@
 <?php if ($block->isEnabled()): ?>
 <script defer
     class="wizart__floating-button"
-    data-title="<?= $block->getHelper()->getTitle(); ?>"
     data-token="<?= $block->getToken(); ?>"
         <?php foreach ($block->getDataAttributes() as $key => $value): ?>
             <?= sprintf('data-%s="%s"', $key, $value); ?>
         <?php endforeach; ?>
-        data-tooltip_disable="true"
     src="<?= $block->getHelper()->getSrc(); ?>"
 >
 </script>
