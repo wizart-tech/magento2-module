@@ -11,11 +11,13 @@
   "autoload": {
     "files": [
       "General/registration.php",
-      "FloatingButton/registration.php"
+      "FloatingButton/registration.php",
+      "EntryPointButton/registration.php"
     ],
     "psr-4": {
       "Wizart\\General\\": "General",
-      "Wizart\\Cms\\": "FloatingButton"
+      "Wizart\\FloatingButton\\": "FloatingButton",
+      "Wizart\\EntryPointButton\\": "EntryPointButton"
     }
   }
 }

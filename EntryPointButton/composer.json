@@ -1,14 +1,14 @@
 {
-  "name": "wizart/floating-button",
+  "name": "wizart/entry-point-button",
   "license": "Commercial",
-  "description": "monolith Magento2 Floating Button",
+  "description": "monolith Magento2 Entry Point Button",
   "type": "magento2-module",
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "Wizart\\FloatingButton\\": ""
+      "Wizart\\EntryPointButton\\": ""
     }
   }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <wizart_entry_point_button>
+            <product_page>
+
+            </product_page>
+            <catalog_page>
+
+            </catalog_page>
+        </wizart_entry_point_button>
+    </default>
+</config>
