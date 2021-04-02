@@ -11,17 +11,6 @@ class FloatingButton extends AbstractConfig
     protected const SECTION = 'wizart_floating_button';
     protected const GROUP = 'home_page';
 
-    public function getConfigValueForButton(string $dataAttribute): ?string
-    {
-        try {
-            $configValue = (string) $this->getConfigValue($dataAttribute);
-        } catch (\Throwable $throwable) {
-            return null;
-        }
-
-        return !empty($configValue) ? $configValue : null;
-    }
-
     public function getSrc(): string
     {
         return $this->getConfigValue('src');
@@ -52,6 +41,11 @@ class FloatingButton extends AbstractConfig
         return $this->isSetFlag('tooltip_disable');
     }
 
+    public function getTooltipDisable(): string
+    {
+        return $this->isSetFlag('tooltip_disable') ? 'true' : 'false';
+    }
+
     public function getTooltipTitle(): ?string
     {
         return $this->getConfigValue('tooltip_title') ?: null;
@@ -62,9 +56,14 @@ class FloatingButton extends AbstractConfig
         return $this->getConfigValue('tooltip_position') ?: null;
     }
 
-    public function isGlitterDisable(): bool
+    public function isGlitterDisabled(): bool
     {
         return $this->isSetFlag('glitter_disable');
+    }
+
+    public function getGlitterDisable(): string
+    {
+        return $this->isSetFlag('glitter_disable') ? 'true' : 'false';
     }
 
     public function getWidth(): ?string
@@ -105,6 +104,11 @@ class FloatingButton extends AbstractConfig
     public function isCompact(): bool
     {
         return $this->isSetFlag('compact');
+    }
+
+    public function getCompact(): string
+    {
+        return $this->isSetFlag('compact') ? 'true': 'false';
     }
 
     public function getOnloadCallback(): ?string

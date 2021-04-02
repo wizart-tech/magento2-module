@@ -21,15 +21,40 @@ class FloatingButtonBlock extends Template
      */
     private $generalConfig;
 
+    /**
+     * @var array
+     */
+    private $dataAttributes;
+
     public function __construct(
         Template\Context $context,
         FloatingButton $floatingButtonConfig,
         GeneralConfig $generalConfig,
+        $dataAttributes = [],
         array $data = []
     ) {
         parent::__construct($context, $data);
         $this->floatingButtonConfig = $floatingButtonConfig;
         $this->generalConfig = $generalConfig;
+        $this->dataAttributes = $dataAttributes;
+    }
+
+    public function getDataAttributes(): array
+    {
+        $attributes = [];
+        foreach ($this->dataAttributes as $key => $dataKey) {
+            if (!method_exists($this->floatingButtonConfig, $key)) {
+                continue;
+            }
+
+            $value = $this->getHelper()->$key();
+            if (null === $value) {
+                continue;
+            }
+            $attributes[$dataKey] = $value;
+        }
+
+        return $attributes;
     }
 
     public function isEnabled(): bool

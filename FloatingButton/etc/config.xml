@@ -23,6 +23,7 @@
                 <element_selector></element_selector>
                 <insert_element_position>append</insert_element_position>
                 <iframe_element_selector></iframe_element_selector>
+                <insert_iframe_element_position>append</insert_iframe_element_position>
             </home_page>
         </wizart_floating_button>
     </default>

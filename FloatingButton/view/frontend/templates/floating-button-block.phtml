@@ -4,31 +4,16 @@
  */
 ?>
 
-<?php
-    if ($block->isEnabled()):
-?>
+<?php if ($block->isEnabled()): ?>
 <script defer
     class="wizart__floating-button"
     data-title="<?= $block->getHelper()->getTitle(); ?>"
     data-token="<?= $block->getToken(); ?>"
-        <?php foreach (): ?>
-        <?= sprintf('data-%s="%s"', ) ?>
+        <?php foreach ($block->getDataAttributes() as $key => $value): ?>
+            <?= sprintf('data-%s="%s"', $key, $value); ?>
         <?php endforeach; ?>
+        data-tooltip_disable="true"
     src="<?= $block->getHelper()->getSrc(); ?>"
 >
-
 </script>
-
-
-<!---->
-<!--<script type="text/x-magento-init">-->
-<!--    {-->
-<!--        "*": {-->
-<!--            "Wizart_FloatingButton/js/home-page/floating-button": {-->
-<!--            }-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-<?php
-    endif;
-?>
+<?php endif; ?>
