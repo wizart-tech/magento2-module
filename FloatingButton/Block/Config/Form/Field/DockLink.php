@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Wizart\Cms\Block\Config\Form\Field;
+namespace Wizart\FloatingButton\Block\Config\Form\Field;
 
 use \Magento\Config\Block\System\Config\Form\Field;
 use \Magento\Framework\Data\Form\Element\AbstractElement;

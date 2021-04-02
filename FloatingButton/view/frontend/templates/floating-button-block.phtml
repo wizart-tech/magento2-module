@@ -1,0 +1,34 @@
+<?php
+/**
+ * @var \Wizart\FloatingButton\Block\FloatingButtonBlock $block
+ */
+?>
+
+<?php
+    if ($block->isEnabled()):
+?>
+<script defer
+    class="wizart__floating-button"
+    data-title="<?= $block->getHelper()->getTitle(); ?>"
+    data-token="<?= $block->getToken(); ?>"
+        <?php foreach (): ?>
+        <?= sprintf('data-%s="%s"', ) ?>
+        <?php endforeach; ?>
+    src="<?= $block->getHelper()->getSrc(); ?>"
+>
+
+</script>
+
+
+<!---->
+<!--<script type="text/x-magento-init">-->
+<!--    {-->
+<!--        "*": {-->
+<!--            "Wizart_FloatingButton/js/home-page/floating-button": {-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<?php
+    endif;
+?>

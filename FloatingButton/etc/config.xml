@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <wizart_general>
-            <wizart_home_page>
+        <wizart_floating_button>
+            <home_page>
+                <src>https://wizart-files.fra1.cdn.digitaloceanspaces.com/production/integration/floating-button.min.js</src>
                 <title>Try it in your room in one click!</title>
                 <background></background>
                 <color></color>
@@ -22,7 +23,7 @@
                 <element_selector></element_selector>
                 <insert_element_position>append</insert_element_position>
                 <iframe_element_selector></iframe_element_selector>
-            </wizart_home_page>
-        </wizart_general>
+            </home_page>
+        </wizart_floating_button>
     </default>
 </config>

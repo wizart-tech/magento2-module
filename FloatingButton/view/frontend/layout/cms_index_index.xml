@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Wizart\Cms\Block\FloatingButtonBlock" template="Wizart_Cms::floating-button-block.phtml"/>
+            <block class="Wizart\FloatingButton\Block\FloatingButtonBlock" template="Wizart_FloatingButton::floating-button-block.phtml"/>
         </referenceContainer>
     </body>
 </page>

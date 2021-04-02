@@ -2,12 +2,15 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <section id="wizart_general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <group id="wizart_home_page" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Home Page Settings</label>
+        <section id="wizart_floating_button" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Floating Button</label>
+            <tab>wizart</tab>
+            <resource>Wizart_FloatingButton::configuration</resource>
+            <group id="home_page" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Home Page</label>
                 <field id="doc_link" translate="Version" type="text"  sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Documentation</label>
-                    <frontend_model>\Wizart\Cms\Block\Config\Form\Field\DockLink</frontend_model>
+                    <frontend_model>\Wizart\FloatingButton\Block\Config\Form\Field\DockLink</frontend_model>
                 </field>
                 <field id="enabled" translate="Token" type="select"  sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enable</label>
@@ -170,9 +173,6 @@
                         <field id="enabled">1</field>
                     </depends>
                 </field>
-                <depends>
-                    <field id="wizart_general/wizart_version/enabled">1</field>
-                </depends>
             </group>
         </section>
     </system>
