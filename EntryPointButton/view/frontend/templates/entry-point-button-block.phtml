@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Wizart\General\Block\AbstractButtonsTemplate $block
+ */
+?>
+
+<?php if ($block->isEnabled()): ?>
+<script defer
+        class="wizart__entry-point"
+        data-token="<?= $block->getToken(); ?>"
+    <?php foreach ($block->getDataAttributes() as $key => $value): ?>
+        <?= sprintf('data-%s="%s"', $key, $value); ?>
+    <?php endforeach; ?>
+        src="<?= $block->getHelper()->getSrc(); ?>"
+</script>
+<?php endif; ?>

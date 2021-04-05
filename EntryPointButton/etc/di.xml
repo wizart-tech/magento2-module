@@ -1,4 +1,29 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-
+    <type name="Wizart\EntryPointButton\Block\ProductPage\EntryPointButtonBlock">
+        <arguments>
+            <argument name="dataAttributes" xsi:type="array">
+                <item name="getTitle" xsi:type="string">title</item>
+                <item name="getBackground" xsi:type="string">background</item>
+                <item name="getColor" xsi:type="string">color</item>
+                <item name="getTooltipDisable" xsi:type="string">tooltip_disable</item>
+                <item name="getTooltipTitle" xsi:type="string">tooltip_title</item>
+                <item name="getTooltipPosition" xsi:type="string">tooltip_position</item>
+                <item name="getGlitterDisable" xsi:type="string">glitter_disable</item>
+                <item name="getWidth" xsi:type="string">width</item>
+                <item name="getHeight" xsi:type="string">height</item>
+                <item name="getBorder" xsi:type="string">border</item>
+                <item name="getBorderRadius" xsi:type="string">border_radius</item>
+                <item name="getImage" xsi:type="string">image</item>
+                <item name="getClassName" xsi:type="string">class_name</item>
+                <item name="getCompact" xsi:type="string">compact</item>
+                <item name="getOnloadCallback" xsi:type="string">onload-callback</item>
+                <item name="getOnCloseCallback" xsi:type="string">on-close-callback</item>
+                <item name="getElementSelector" xsi:type="string">element-selector</item>
+                <item name="getInsertElementPosition" xsi:type="string">insert-element-position</item>
+                <item name="getIframeElementSelector" xsi:type="string">iframe-element-selector</item>
+                <item name="getInsertIframeElementPosition" xsi:type="string">insert-iframe-element-position</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

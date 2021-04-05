@@ -2,23 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Wizart\FloatingButton\Block;
+namespace Wizart\EntryPointButton\Block\ProductPage;
 
 
 use Magento\Framework\View\Element\Template;
-use Wizart\FloatingButton\Helper\Config\HomePage\FloatingButton;
+use Wizart\EntryPointButton\Helper\Config\ProductPage\EntryPointButton;
 use Wizart\General\Block\AbstractButtonsTemplate;
 use Wizart\General\Helper\Config\GeneralConfig;
 
-class FloatingButtonBlock extends AbstractButtonsTemplate
+class EntryPointButtonBlock extends AbstractButtonsTemplate
 {
+
     public function __construct(
         Template\Context $context,
-        FloatingButton $floatingButtonConfig,
+        EntryPointButton $buttonConfig,
         GeneralConfig $generalConfig,
         $dataAttributes = [],
         array $data = []
     ) {
-        parent::__construct($context, $floatingButtonConfig, $generalConfig, $dataAttributes, $data);
+        parent::__construct($context, $buttonConfig, $generalConfig, $dataAttributes, $data);
     }
 }
