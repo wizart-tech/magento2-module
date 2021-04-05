@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <wizart_general>
+            <api>
+                <url><![CDATA[https://pim-client.wizart.tech/api/]]></url>
+                <available_sku_uri><![CDATA[articles/available-vendor-codes]]></available_sku_uri>
+            </api>
+        </wizart_general>
+    </default>
+</config>

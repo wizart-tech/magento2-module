@@ -12,12 +12,14 @@
     "files": [
       "General/registration.php",
       "FloatingButton/registration.php",
-      "EntryPointButton/registration.php"
+      "EntryPointButton/registration.php",
+      "PIMConnector/registration.php"
     ],
     "psr-4": {
       "Wizart\\General\\": "General",
       "Wizart\\FloatingButton\\": "FloatingButton",
-      "Wizart\\EntryPointButton\\": "EntryPointButton"
+      "Wizart\\EntryPointButton\\": "EntryPointButton",
+      "Wizart\\PIMConnector\\": "PIMConnector"
     }
   }
 }
