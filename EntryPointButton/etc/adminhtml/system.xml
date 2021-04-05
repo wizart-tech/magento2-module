@@ -75,8 +75,8 @@
                     </depends>
                 </field>
                 <field id="width" translate="label" type="text"  sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Max button width</label>
-                    <tooltip>Max button width.</tooltip>
+                    <label>Button width</label>
+                    <tooltip>Button width.</tooltip>
                     <comment>Keep empty for default. Example: 250px, 20%</comment>
                     <depends>
                         <field id="enabled">1</field>
@@ -242,8 +242,8 @@
                     </depends>
                 </field>
                 <field id="width" translate="label" type="text"  sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Max button width</label>
-                    <tooltip>Max button width.</tooltip>
+                    <label>Button width</label>
+                    <tooltip>Button width.</tooltip>
                     <comment>Keep empty for default. Example: 250px, 20%</comment>
                     <depends>
                         <field id="enabled">1</field>
