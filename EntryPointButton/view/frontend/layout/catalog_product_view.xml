@@ -2,8 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="content">
-            <block after="extrahint" class="Wizart\EntryPointButton\Block\ProductPage\EntryPointButtonBlock" name="entry.point.button" template="Wizart_EntryPointButton::entry-point-button-block.phtml">
-            </block>
+            <block class="Wizart\EntryPointButton\Block\ProductPage\EntryPointButtonBlock" name="entry.point.button" template="Wizart_EntryPointButton::entry-point-button-block.phtml" />
         </referenceBlock>
     </body>
 </page>

@@ -10,8 +10,8 @@
         data-vendor_code="<?= $block->getProduct()->getSku(); ?>"
         data-token="<?= $block->getToken(); ?>"
     <?php foreach ($block->getDataAttributes() as $key => $value): ?>
-        <?= sprintf('data-%s="%s"', $key, $value); ?>
+        <?= sprintf(' data-%s="%s" ', $key, $value); ?>
     <?php endforeach; ?>
         src="<?= $block->getHelper()->getSrc(); ?>"
-</script>
+></script>
 <?php endif; ?>
