@@ -1,0 +1,28 @@
+<?php
+/**
+ * @var \Wizart\EntryPointButton\Block\CatalogPage\Iframe $block
+ */
+?>
+
+<?php if ($block->isEnabled()): ?>
+<iframe
+    id="wizart-fitting-room-object"
+    role="dialog"
+    aria-label="Wizart Fitting Room"
+    type="text/html"
+    allowfullscreen
+    name="wizartFittingRoom"
+>
+</iframe>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Wizart_EntryPointButton/js/iframe": {
+                "server_address": "<?= $block->getPimUrl(); ?>",
+                "api_token":  "<?= $block->getToken() ?>"
+            }
+        }
+    }
+</script>
+<?php endif; ?>

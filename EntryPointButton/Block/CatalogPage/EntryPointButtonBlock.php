@@ -5,15 +5,17 @@ declare(strict_types=1);
 namespace Wizart\EntryPointButton\Block\CatalogPage;
 
 
+use Magento\Catalog\Api\Data\ProductInterface;
+use Magento\Catalog\Block\Product\AwareInterface as ProductAwareInterface;
 use Magento\Catalog\Model\Product;
 use Magento\Framework\Registry;
 use Magento\Framework\View\Element\Template;
-use Wizart\EntryPointButton\Helper\Config\ProductPage\EntryPointButton;
+use Wizart\EntryPointButton\Helper\Config\CatalogPage\EntryPointButton;
 use Wizart\General\Block\AbstractButtonsTemplate;
 use Wizart\General\Helper\Config\GeneralConfig;
 use Wizart\PIMConnector\Helper\Connector;
 
-class EntryPointButtonBlock extends AbstractButtonsTemplate
+class EntryPointButtonBlock extends AbstractButtonsTemplate implements ProductAwareInterface
 {
     /**
      * @var Registry
@@ -24,6 +26,9 @@ class EntryPointButtonBlock extends AbstractButtonsTemplate
      * @var Connector
      */
     private $pimConnector;
+
+    /** @var Product */
+    private $product;
 
     public function __construct(
         Template\Context $context,
@@ -39,19 +44,28 @@ class EntryPointButtonBlock extends AbstractButtonsTemplate
         $this->pimConnector = $pimConnector;
     }
 
-    public function isEnabled(): bool
+    public function getTitle(): string
     {
-        return parent::isEnabled();
+        return $this->buttonConfig->getTitle();
     }
 
     public function getProduct(): ?Product
     {
+        if (null !== $this->product) {
+            return $this->product;
+        }
+
         $product = $this->coreRegistry->registry('product');
         if (!$product instanceof Product) {
             return null;
         }
 
         return $product;
+    }
+
+    public function setProduct(ProductInterface $product): void
+    {
+        $this->product = $product;
     }
 
     protected function isProductExist(): bool

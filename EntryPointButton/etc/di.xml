@@ -26,4 +26,11 @@
             </argument>
         </arguments>
     </type>
+    <type name="Wizart\EntryPointButton\Block\CatalogPage\EntryPointButtonBlock">
+        <arguments>
+            <argument name="dataAttributes" xsi:type="array">
+                <item name="getTitle" xsi:type="string">title</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

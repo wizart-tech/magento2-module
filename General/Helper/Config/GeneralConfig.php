@@ -6,7 +6,7 @@ namespace Wizart\General\Helper\Config;
 
 class GeneralConfig extends AbstractConfig
 {
-    protected const GROUP = 'version';
+    protected const GROUP = 'general';
 
     public function isModuleEnabled(): bool
     {
