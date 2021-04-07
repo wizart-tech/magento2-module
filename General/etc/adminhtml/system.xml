@@ -19,11 +19,19 @@
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="token" translate="Token" type="text"  sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="token" translate="Token" type="text"  sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>API Token</label>
                     <tooltip>Go to PIM Admin -> Configuration -> Web and copy API Token</tooltip>
                     <comment>Example: SNnIlHneWJWVxvEzKhEioWqYEfdZwgjNVbR6I7fJ2JiNjjEfjxf9cUbkuF</comment>
                     <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="context" translate="Token" type="text"  sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Context</label>
+                    <tooltip>Current context</tooltip>
+                    <comment>Keep empty to use all contexts.</comment>
                     <depends>
                         <field id="enabled">1</field>
                     </depends>

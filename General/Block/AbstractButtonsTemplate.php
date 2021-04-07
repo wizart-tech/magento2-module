@@ -38,6 +38,11 @@ abstract class AbstractButtonsTemplate extends Template
         $this->dataAttributes = $dataAttributes;
     }
 
+    public function getParameters(): string
+    {
+        return \json_encode($this->generalConfig->getParameters());
+    }
+
     public function getDataAttributes(): array
     {
         $attributes = [];

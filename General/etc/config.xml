@@ -4,6 +4,7 @@
         <wizart_general>
             <general>
                 <enabled>0</enabled>
+                <context></context>
             </general>
         </wizart_general>
     </default>

@@ -29,6 +29,11 @@ class Iframe extends AbstractButtonsTemplate
         $this->connectorConfig = $connectorConfig;
     }
 
+    public function getContext(): string
+    {
+        return $this->generalConfig->getContext() ?? '';
+    }
+
     public function getPimUrl(): string
     {
         return $this->connectorConfig->getEndpointUrl();
