@@ -8,40 +8,40 @@ namespace Wizart\EntryPointButton\Block\CatalogPage;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Block\Product\AwareInterface as ProductAwareInterface;
 use Magento\Catalog\Model\Product;
+use Magento\Catalog\Model\ProductRepository;
 use Magento\Framework\Registry;
 use Magento\Framework\View\Element\Template;
+use Wizart\EntryPointButton\Block\AbstractEntryPointButtonBlock;
 use Wizart\EntryPointButton\Helper\Config\CatalogPage\EntryPointButton;
-use Wizart\General\Block\AbstractButtonsTemplate;
 use Wizart\General\Helper\Config\GeneralConfig;
-use Wizart\PIMConnector\Helper\Connector;
 
-class EntryPointButtonBlock extends AbstractButtonsTemplate implements ProductAwareInterface
+class EntryPointButtonBlock extends AbstractEntryPointButtonBlock implements ProductAwareInterface
 {
     /**
      * @var Registry
      */
     private $coreRegistry;
 
-    /**
-     * @var Connector
-     */
-    private $pimConnector;
-
     /** @var Product */
     private $product;
+
+    /**
+     * @var ProductRepository
+     */
+    private $productRepository;
 
     public function __construct(
         Template\Context $context,
         EntryPointButton $buttonConfig,
         GeneralConfig $generalConfig,
         Registry $coreRegistry,
-        Connector $pimConnector,
+        ProductRepository $productRepository,
         $dataAttributes = [],
         array $data = []
     ) {
         parent::__construct($context, $buttonConfig, $generalConfig, $dataAttributes, $data);
         $this->coreRegistry = $coreRegistry;
-        $this->pimConnector = $pimConnector;
+        $this->productRepository = $productRepository;
     }
 
     public function getTitle(): string
@@ -65,16 +65,6 @@ class EntryPointButtonBlock extends AbstractButtonsTemplate implements ProductAw
 
     public function setProduct(ProductInterface $product): void
     {
-        $this->product = $product;
-    }
-
-    protected function isProductExist(): bool
-    {
-        $product = $this->getProduct();
-        if (null === $product) {
-            return false;
-        }
-
-        return $this->pimConnector->isProductAvailable($product->getSku());
+        $this->product = $this->productRepository->getById($product->getId());
     }
 }
