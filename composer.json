@@ -1,5 +1,5 @@
 {
-  "name": "wizart/fitting-room",
+  "name": "wizart/magento2-module",
   "description": "Wizart Magento 2 Integration",
   "version": "2.2.1",
   "require": {
@@ -7,7 +7,7 @@
     "magento/product-community-edition": "~2.2.9"
   },
   "type": "magento2-module",
-  "license": "Commercial",
+  "license": "GPLv2 or later",
   "autoload": {
     "files": [
       "General/registration.php",

@@ -1,6 +1,6 @@
 {
-  "name": "wizart/general",
-  "license": "Commercial",
+  "name": "wizart/module-general",
+  "license": "GPLv2 or later",
   "description": "monolith Magento2 General",
   "type": "magento2-module",
   "autoload": {

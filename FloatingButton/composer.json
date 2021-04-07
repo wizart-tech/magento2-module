@@ -1,6 +1,6 @@
 {
-  "name": "wizart/floating-button",
-  "license": "Commercial",
+  "name": "wizart/module-floating-button",
+  "license": "GPLv2 or later",
   "description": "monolith Magento2 Floating Button",
   "type": "magento2-module",
   "autoload": {

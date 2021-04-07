@@ -1,6 +1,6 @@
 {
-  "name": "wizart/entry-point-button",
-  "license": "Commercial",
+  "name": "wizart/module-entry-point-button",
+  "license": "GPLv2 or later",
   "description": "monolith Magento2 Entry Point Button",
   "type": "magento2-module",
   "autoload": {
