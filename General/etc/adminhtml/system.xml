@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wizart" translate="label" sortOrder="999">
+            <label>Wizart</label>
+        </tab>
+        <section id="wizart_general" translate="label" type="html" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>General Settings</label>
+            <tab>wizart</tab>
+            <resource>Wizart_General::configuration</resource>
+            <group id="general" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="version" translate="Version" type="text"  sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Version</label>
+                    <frontend_model>\Wizart\General\Block\Config\Form\Field\Version</frontend_model>
+                </field>
+                <field id="enabled" translate="Token" type="select"  sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="token" translate="Token" type="text"  sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Token</label>
+                    <tooltip>Go to PIM Admin -> Configuration -> Web and copy API Token</tooltip>
+                    <comment>Example: SNnIlHneWJWVxvEzKhEioWqYEfdZwgjNVbR6I7fJ2JiNjjEfjxf9cUbkuF</comment>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="context" translate="Token" type="text"  sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Context</label>
+                    <tooltip>Current context</tooltip>
+                    <comment>Keep empty to use all contexts.</comment>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

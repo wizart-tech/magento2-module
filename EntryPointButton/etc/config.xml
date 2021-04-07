@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <wizart_entry_point_button>
+            <product_page>
+                <src>https://wizart-files.fra1.cdn.digitaloceanspaces.com/production/integration/entry-point.min.js</src>
+                <title>Try it in your room in one click!</title>
+                <background></background>
+                <color></color>
+                <tooltip_disable>0</tooltip_disable>
+                <tooltip_title>See it in your room!</tooltip_title>
+                <tooltip_position>top</tooltip_position>
+                <glitter_disable>0</glitter_disable>
+                <width></width>
+                <height></height>
+                <border></border>
+                <border_radius></border_radius>
+                <image></image>
+                <class_name></class_name>
+                <onload-callback></onload-callback>
+                <on_close_callback></on_close_callback>
+                <element_selector>.product-add-form .box-tocart .actions</element_selector>
+                <insert_element_position>after</insert_element_position>
+                <iframe_element_selector></iframe_element_selector>
+                <insert_iframe_element_position>append</insert_iframe_element_position>
+            </product_page>
+            <catalog_page>
+                <title>Try it in your room in one click!</title>
+            </catalog_page>
+        </wizart_entry_point_button>
+    </default>
+</config>

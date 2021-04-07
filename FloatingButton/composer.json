@@ -1,0 +1,14 @@
+{
+  "name": "wizart/module-floating-button",
+  "license": "GPLv2 or later",
+  "description": "monolith Magento2 Floating Button",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wizart\\FloatingButton\\": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "wizart/module-pim-connector",
+  "license": "GPLv2 or later",
+  "description": "monolith Magento2 PIM Connector",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Wizart\\PIMConnector\\": ""
+    }
+  }
+}

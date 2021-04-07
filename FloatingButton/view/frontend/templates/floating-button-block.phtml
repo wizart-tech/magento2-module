@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var \Wizart\FloatingButton\Block\FloatingButtonBlock $block
+ */
+?>
+
+<?php if ($block->isEnabled()): ?>
+<script defer
+    class="wizart__floating-button"
+    data-token="<?= $block->getToken(); ?>"
+        <?php foreach ($block->getDataAttributes() as $key => $value): ?>
+            <?= sprintf('data-%s="%s"', $key, $value); ?>
+        <?php endforeach; ?>
+    data-parameters='<?= $block->getParameters(); ?>'
+    src="<?= $block->getHelper()->getSrc(); ?>"
+>
+</script>
+<?php endif; ?>

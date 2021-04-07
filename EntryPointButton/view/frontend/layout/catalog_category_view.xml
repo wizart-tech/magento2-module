@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Wizart_EntryPointButton::css/styles.css"/>
+    </head>
+    <body>
+        <referenceBlock name="content">
+            <block class="Wizart\EntryPointButton\Block\CatalogPage\Iframe" name="entry.point.iframe" template="Wizart_EntryPointButton::catalog-page/entry-point-iframe.phtml" />
+        </referenceBlock>
+        <referenceBlock name="category.product.addto">
+            <block before="compare" class="Wizart\EntryPointButton\Block\CatalogPage\EntryPointButtonBlock" name="entry.point.button" template="Wizart_EntryPointButton::catalog-page/entry-point-button-block.phtml" />
+        </referenceBlock>
+    </body>
+</page>
