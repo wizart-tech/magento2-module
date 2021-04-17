@@ -3,6 +3,7 @@
   "license": "GPLv2 or later",
   "description": "monolith Magento2 PIM Connector",
   "type": "magento2-module",
+  "version": "2.4.1",
   "autoload": {
     "files": [
       "registration.php"
