@@ -46,7 +46,7 @@ class EntryPointButtonBlock extends AbstractEntryPointButtonBlock implements Pro
 
     public function getTitle(): string
     {
-        return $this->buttonConfig->getTitle();
+        return $this->buttonConfig->getTitle() ?: '';
     }
 
     public function getProduct(): ?Product

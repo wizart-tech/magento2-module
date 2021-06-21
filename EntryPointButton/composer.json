@@ -3,7 +3,7 @@
   "license": "GPLv2 or later",
   "description": "monolith Magento2 Entry Point Button",
   "type": "magento2-module",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "autoload": {
     "files": [
       "registration.php"
