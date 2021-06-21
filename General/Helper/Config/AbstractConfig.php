@@ -9,8 +9,8 @@ use Magento\Framework\App\Helper\AbstractHelper;
 
 abstract class AbstractConfig extends AbstractHelper
 {
-    protected const SECTION = 'wizart_general';
-    protected const GROUP = '';
+    const SECTION = 'wizart_general';
+    const GROUP = '';
 
     protected function getPath(string $field, string $group = null, string $section = null): string
     {
@@ -41,17 +41,17 @@ abstract class AbstractConfig extends AbstractHelper
         return $this->isSetFlag('enabled');
     }
 
-    public function getTitle(): ?string
+    public function getTitle()
     {
         return $this->getConfigValue('title') ?: null;
     }
 
-    public function getBackground(): ?string
+    public function getBackground()
     {
         return $this->getConfigValue('background') ?: null;
     }
 
-    public function getColor(): ?string
+    public function getColor()
     {
         return $this->getConfigValue('color') ?: null;
     }
@@ -66,12 +66,12 @@ abstract class AbstractConfig extends AbstractHelper
         return $this->isSetFlag('tooltip_disable') ? 'true' : 'false';
     }
 
-    public function getTooltipTitle(): ?string
+    public function getTooltipTitle()
     {
         return $this->getConfigValue('tooltip_title') ?: null;
     }
 
-    public function getTooltipPosition(): ?string
+    public function getTooltipPosition()
     {
         return $this->getConfigValue('tooltip_position') ?: null;
     }
@@ -86,67 +86,67 @@ abstract class AbstractConfig extends AbstractHelper
         return $this->isSetFlag('glitter_disable') ? 'true' : 'false';
     }
 
-    public function getWidth(): ?string
+    public function getWidth()
     {
         return $this->getConfigValue('width') ?: null;
     }
 
-    public function getHeight(): ?string
+    public function getHeight()
     {
         return $this->getConfigValue('height') ?: null;
     }
 
-    public function get(): ?string
+    public function get()
     {
         return $this->getConfigValue('') ?: null;
     }
 
-    public function getBorder(): ?string
+    public function getBorder()
     {
         return $this->getConfigValue('border') ?: null;
     }
 
-    public function getBorderRadius(): ?string
+    public function getBorderRadius()
     {
         return $this->getConfigValue('border_radius') ?: null;
     }
 
-    public function getImage(): ?string
+    public function getImage()
     {
         return $this->getConfigValue('image') ?: null;
     }
 
-    public function getClassName(): ?string
+    public function getClassName()
     {
         return $this->getConfigValue('class_name') ?: null;
     }
 
-    public function getOnloadCallback(): ?string
+    public function getOnloadCallback()
     {
         return $this->getConfigValue('onload_callback') ?: null;
     }
 
-    public function getOnCloseCallback(): ?string
+    public function getOnCloseCallback()
     {
         return $this->getConfigValue('on_close_callback') ?: null;
     }
 
-    public function getElementSelector(): ?string
+    public function getElementSelector()
     {
         return $this->getConfigValue('element_selector') ?: null;
     }
 
-    public function getInsertElementPosition(): ?string
+    public function getInsertElementPosition()
     {
         return $this->getConfigValue('insert_element_position') ?: null;
     }
 
-    public function getIframeElementSelector(): ?string
+    public function getIframeElementSelector()
     {
         return $this->getConfigValue('iframe_element_selector') ?: null;
     }
 
-    public function getInsertIframeElementPosition(): ?string
+    public function getInsertIframeElementPosition()
     {
         return $this->getConfigValue('insert_iframe_element_position') ?: null;
     }

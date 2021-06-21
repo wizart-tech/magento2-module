@@ -8,5 +8,5 @@ use Wizart\EntryPointButton\Helper\Config\AbstractConfig;
 
 class EntryPointButton extends AbstractConfig
 {
-    protected const GROUP = 'catalog_page';
+    const GROUP = 'catalog_page';
 }

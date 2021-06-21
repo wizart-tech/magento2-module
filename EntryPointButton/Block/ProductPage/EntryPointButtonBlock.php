@@ -31,7 +31,10 @@ class EntryPointButtonBlock extends AbstractEntryPointButtonBlock
         $this->coreRegistry = $coreRegistry;
     }
 
-    public function getProduct(): ?Product
+    /**
+     * @inheritDoc
+     */
+    public function getProduct()
     {
         $product = $this->coreRegistry->registry('product');
         if (!$product instanceof Product) {

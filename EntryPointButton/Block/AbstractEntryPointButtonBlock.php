@@ -16,7 +16,10 @@ abstract class AbstractEntryPointButtonBlock extends AbstractButtonsTemplate
             && $this->generalConfig->canProductVisualize($this->getProduct());
     }
 
-    abstract public function getProduct(): ?Product;
+    /**
+     * @return Product|null
+     */
+    abstract public function getProduct();
 
     protected function isProductExist(): bool
     {

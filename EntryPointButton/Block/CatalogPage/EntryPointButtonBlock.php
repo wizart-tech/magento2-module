@@ -49,7 +49,10 @@ class EntryPointButtonBlock extends AbstractEntryPointButtonBlock implements Pro
         return $this->buttonConfig->getTitle();
     }
 
-    public function getProduct(): ?Product
+    /**
+     * @inheritDoc
+     */
+    public function getProduct()
     {
         if (null !== $this->product) {
             return $this->product;
@@ -63,7 +66,7 @@ class EntryPointButtonBlock extends AbstractEntryPointButtonBlock implements Pro
         return $product;
     }
 
-    public function setProduct(ProductInterface $product): void
+    public function setProduct(ProductInterface $product)
     {
         $this->product = $this->productRepository->getById($product->getId());
     }

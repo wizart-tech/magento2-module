@@ -8,8 +8,8 @@ use Wizart\General\Helper\Config\AbstractConfig;
 
 class FloatingButton extends AbstractConfig
 {
-    protected const SECTION = 'wizart_floating_button';
-    protected const GROUP = 'home_page';
+    const SECTION = 'wizart_floating_button';
+    const GROUP = 'home_page';
 
     public function isCompact(): bool
     {

@@ -8,8 +8,8 @@ use Magento\Framework\App\Helper\AbstractHelper;
 
 class Configuration extends AbstractHelper
 {
-    protected const API_ENDPOINT_URL = 'wizart_general/api/url';
-    protected const API_AVAILABLE_SKU_URI = 'wizart_general/api/available_sku_uri';
+    const API_ENDPOINT_URL = 'wizart_general/api/url';
+    const API_AVAILABLE_SKU_URI = 'wizart_general/api/available_sku_uri';
 
     public function getEndpointUrl(): string
     {

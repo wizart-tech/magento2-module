@@ -9,7 +9,7 @@ use Magento\Framework\App\Helper\Context;
 
 class GeneralConfig extends AbstractConfig
 {
-    protected const GROUP = 'general';
+    const GROUP = 'general';
 
     public function isModuleEnabled(): bool
     {
@@ -21,12 +21,12 @@ class GeneralConfig extends AbstractConfig
         return filter_var($product->getData('wizart_visualize'), FILTER_VALIDATE_BOOLEAN);
     }
 
-    public function getAPIToken(): ?string
+    public function getAPIToken()
     {
         return $this->getConfigValue('token') ?: null;
     }
 
-    public function getContext(): ?string
+    public function getContext()
     {
         return $this->getConfigValue('context') ?: null;
     }
