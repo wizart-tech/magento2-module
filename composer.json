@@ -3,7 +3,7 @@
   "description": "Wizart Magento 2 Integration",
   "version": "2.2.2",
   "require": {
-    "php": "^7.2"
+    "php": "^7.0"
   },
   "type": "magento2-module",
   "license": "GPLv2 or later",
