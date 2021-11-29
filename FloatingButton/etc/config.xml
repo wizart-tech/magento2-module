@@ -3,7 +3,7 @@
     <default>
         <wizart_floating_button>
             <home_page>
-                <src>https://wizart-files.fra1.cdn.digitaloceanspaces.com/production/integration/floating-button.min.js</src>
+                <src>https://d35so7k19vd0fx.cloudfront.net/production/integration/floating-button.min.js</src>
                 <title>Try it in your room in one click!</title>
                 <background></background>
                 <color></color>
