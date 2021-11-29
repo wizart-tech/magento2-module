@@ -2,8 +2,7 @@
 
 Contributors: wizartvisualizer
 
-
-If you were looking for an unmatched and realistic product visualization tool driving customer engagements and boosting your sales, try the [Wizart AR Home Visualizer](https://www.wizart.tech/)!
+If you were looking for an unmatched and realistic product visualization tool driving customer engagements and boosting your sales, try the [Wizart AR Home Visualizer](https://wizart.ai/)!
 
 Wizart is an AR Visualizer that provides a virtual fitting room for end customers to select finishing materials, try them on in any interior, and complete the purchase, without having to re-engineer the entire customers' journey. With Wizart, you can ensure your customers are getting the products matching their tastes and meeting their expectations.
 
@@ -13,7 +12,7 @@ Wizart Data Logistics & Insights will reduce your time and costs of digital data
 
 [Contact us](https://wizart.atlassian.net/servicedesk/customer/portals)
 
-[Check our demo](https://demo.wizart.tech/)
+[Check our demo](https://demo.wizart.ai/)
 
 [Check our video](https://www.youtube.com/watch?v=pxtI5yS-DY8&feature=youtu.be)
 
@@ -37,4 +36,4 @@ Wizart Data Logistics & Insights will reduce your time and costs of digital data
 
 **See the app in action**
 
-[View example store](https://store.wizart.tech/)
+[View example store](https://store.wizart.ai/)
