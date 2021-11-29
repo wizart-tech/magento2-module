@@ -2,6 +2,11 @@
 
 Contributors: wizartvisualizer
 
+|Magento Version|Git Branch in GitHub| Tested On|
+| ------ | ------ |------ |
+|2.2.9, PHP7.0 | v2.2-php7.0 |Magento 2.2.9, PHP7.0|
+|2.2.9-11, PHP >= 7.1| v2.2|Magento 2.2.9, 2.2.11, PHP7.0|
+|2.4.x| v2.4|Magento 2.4.3|
 
 If you were looking for an unmatched and realistic product visualization tool driving customer engagements and boosting your sales, try the [Wizart AR Home Visualizer](https://www.wizart.tech/)!
 
@@ -13,7 +18,7 @@ Wizart Data Logistics & Insights will reduce your time and costs of digital data
 
 [Contact us](https://wizart.atlassian.net/servicedesk/customer/portals)
 
-[Check our demo](https://demo.wizart.tech/)
+[Check our demo](https://demo.wizart.ai/)
 
 [Check our video](https://www.youtube.com/watch?v=pxtI5yS-DY8&feature=youtu.be)
 
@@ -37,4 +42,4 @@ Wizart Data Logistics & Insights will reduce your time and costs of digital data
 
 **See the app in action**
 
-[View example store](https://store.wizart.tech/)
+[View example store](https://store.wizart.ai/)
