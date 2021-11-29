@@ -2,7 +2,8 @@
 
 Contributors: wizartvisualizer
 
-|Magento Version|Git Branch in GitHub| Tested On|
+##Version matchings
+|Magento Version|Wizart Plugin Branch in GitHub| Tested On|
 | ------ | ------ |------ |
 |2.2.9, PHP7.0 | v2.2-php7.0 |Magento 2.2.9, PHP7.0|
 |2.2.9-11, PHP >= 7.1| v2.2|Magento 2.2.9, 2.2.11, PHP7.0|
