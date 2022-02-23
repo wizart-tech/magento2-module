@@ -1,7 +1,7 @@
 {
   "name": "wizart/magento2-module",
   "description": "Wizart Magento 2 Integration",
-  "version": "2.4.2",
+  "version": "2.4.4",
   "require": {
     "php": "^7.2"
   },
