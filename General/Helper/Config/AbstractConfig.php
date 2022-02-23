@@ -23,12 +23,12 @@ abstract class AbstractConfig extends AbstractHelper
      */
     public function getConfigValue(string $field)
     {
-        return $this->scopeConfig->getValue($this->getPath($field));
+        return $this->scopeConfig->getValue($this->getPath($field), \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 
     public function isSetFlag(string $field): bool
     {
-        return $this->scopeConfig->isSetFlag($this->getPath($field));
+        return $this->scopeConfig->isSetFlag($this->getPath($field), \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 
     public function getSrc(): string
