@@ -5,6 +5,7 @@
             <general>
                 <enabled>0</enabled>
                 <context></context>
+                <locale></locale>
             </general>
         </wizart_general>
     </default>

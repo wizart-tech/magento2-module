@@ -31,6 +31,11 @@ class GeneralConfig extends AbstractConfig
         return $this->getConfigValue('context') ?: null;
     }
 
+    public function getLocale(): ?string
+    {
+        return $this->getConfigValue('locale') ?: null;
+    }
+
     public function getParameters(): array
     {
         return [

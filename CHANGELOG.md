@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification) for commit guidelines.
 
+2.2.3 (2022-04-01)
+
+Added supporting of localization.
+
 2.2.2 (2022-02-23)
 
 Added magento stores support.

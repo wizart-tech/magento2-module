@@ -34,6 +34,11 @@ class Iframe extends AbstractButtonsTemplate
         return $this->generalConfig->getContext() ?? '';
     }
 
+    public function getLocale(): string
+    {
+        return $this->generalConfig->getLocale() ?? '';
+    }
+
     public function getPimUrl(): string
     {
         return $this->connectorConfig->getEndpointUrl();

@@ -5,12 +5,14 @@ define([
         const serverAddress = config.server_address;
         const apiToken = config.api_token;
         const context = config.context;
+        const locale = config.locale;
 
         // bba (back button action) param is used to add back button to wizart component
         const fittingRoomEndpoint = serverAddress
             + 'fitting-room'
             + '?api_token=' + apiToken
             + '&context=' + context
+            + '&locale=' + locale
             + '&bba=true';
 
         function openFittingRoom (searchQuery) {
