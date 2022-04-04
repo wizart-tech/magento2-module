@@ -36,6 +36,14 @@
                         <field id="enabled">1</field>
                     </depends>
                 </field>
+                <field id="locale" translate="Localization" type="text"  sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Localization</label>
+                    <tooltip>The visualizer and products will be shown with defined localization.</tooltip>
+                    <comment>Keep empty to use default locale. Example: en, fr, de, ch-ZH</comment>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
             </group>
         </section>
     </system>
