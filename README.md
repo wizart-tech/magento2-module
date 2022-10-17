@@ -6,8 +6,8 @@ Contributors: wizartvisualizer
 |Magento Version|Wizart Plugin Branch in GitHub| Tested On|
 | ------ | ------ |------ |
 |2.2.9, PHP7.0 | v2.2-php7.0 |Magento 2.2.9, PHP7.0|
-|2.2.9-11, PHP >= 7.1| v2.2|Magento 2.2.9, 2.2.11, PHP7.0|
-|2.4.x| v2.4|Magento 2.4.3|
+|2.2.9-11, PHP >= 7.1| v2.2|Magento 2.2.9, 2.2.11, PHP7.1|
+|2.4.x| v2.4|Magento 2.4.3 PHP7.2 and PHP8.1|
 
 If you were looking for an unmatched and realistic product visualization tool driving customer engagements and boosting your sales, try the [Wizart AR Home Visualizer](https://www.wizart.tech/)!
 
