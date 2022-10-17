@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-define('WIZART_VERSION', '2.4.5');
+define('WIZART_VERSION', '2.4.6');
 
 use Magento\Framework\Component\ComponentRegistrar as Registrar;
 
